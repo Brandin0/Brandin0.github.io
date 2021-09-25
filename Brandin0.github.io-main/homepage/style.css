@@ -1,0 +1,162 @@
+#main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/main.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.bar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.coll {
+    flex-basis: 50%;
+}
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.bar ul li:hover:after{
+    width: 100%;
+
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid #009688;
+    font-weight: bold;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.card {
+    width: 240px;
+    height: 270px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(images/image1.jpg);
+}
+.card2{
+    background-image: url(images/apex.png);
+}
+.card3{
+    background-image: url(images/image3.png);
+}
+.card4{
+    background-image: url(images/image4.jpg);
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+h3 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+}
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button :hover span {
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+.card ul li{
+    list-style: none;
+    display: inline-block;
+}
+a {
+    -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: all 150ms ease-in-out;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      -ms-word-break: break-all;
+      word-break: break-all;
+      word-break: break-word;
+      -ms-hyphens: none;
+      -webkit-hyphens: none;
+      hyphens: none;
+      color: #fff;
+      font-family: "Open Sans",Calibri,Arial,sans-serif;
+      font-weight: 700;
+      text-decoration: underline;
+      -webkit-text-decoration-color:#009688;
+      text-decoration-color: #009688;
+      font-size: 20px;
